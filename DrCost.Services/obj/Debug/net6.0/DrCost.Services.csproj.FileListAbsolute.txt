@@ -1,0 +1,15 @@
+D:\prg\DrCost\DrCost.Services\bin\Debug\net6.0\DrCost.Services.deps.json
+D:\prg\DrCost\DrCost.Services\bin\Debug\net6.0\DrCost.Services.dll
+D:\prg\DrCost\DrCost.Services\bin\Debug\net6.0\DrCost.Services.pdb
+D:\prg\DrCost\DrCost.Services\bin\Debug\net6.0\DrCost.Models.dll
+D:\prg\DrCost\DrCost.Services\bin\Debug\net6.0\DrCost.Models.pdb
+D:\prg\DrCost\DrCost.Services\obj\Debug\net6.0\DrCost.Services.csproj.AssemblyReference.cache
+D:\prg\DrCost\DrCost.Services\obj\Debug\net6.0\DrCost.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\prg\DrCost\DrCost.Services\obj\Debug\net6.0\DrCost.Services.AssemblyInfoInputs.cache
+D:\prg\DrCost\DrCost.Services\obj\Debug\net6.0\DrCost.Services.AssemblyInfo.cs
+D:\prg\DrCost\DrCost.Services\obj\Debug\net6.0\DrCost.Services.csproj.CoreCompileInputs.cache
+D:\prg\DrCost\DrCost.Services\obj\Debug\net6.0\DrCost.Services.csproj.CopyComplete
+D:\prg\DrCost\DrCost.Services\obj\Debug\net6.0\DrCost.Services.dll
+D:\prg\DrCost\DrCost.Services\obj\Debug\net6.0\refint\DrCost.Services.dll
+D:\prg\DrCost\DrCost.Services\obj\Debug\net6.0\DrCost.Services.pdb
+D:\prg\DrCost\DrCost.Services\obj\Debug\net6.0\ref\DrCost.Services.dll

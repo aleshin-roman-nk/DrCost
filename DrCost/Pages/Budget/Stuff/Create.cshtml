@@ -1,0 +1,72 @@
+﻿@page "{budgetId}/{dt}"
+@model DrCost.Pages.Budget.Stuff.CreateModel
+@{
+}
+
+<form method="post">
+    <input type="hidden" asp-for="@Model.Item.Date" />
+    <input type="hidden" asp-for="@Model.Item.budgetId" />
+    <input type="hidden" asp-for="@Model.Item.stuffTypeId" />
+
+    <label asp-for="@Model.Item.Name" class="form-label">Наименование</label>
+    <div class="input-group mb-3">
+        <button class="btn btn-outline-secondary" type="button">...</button>
+        <input asp-for="@Model.Item.Name" type="text"
+               class="form-control"
+               readonly
+               placeholder="@Model.Item.Name">
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="@Model.Item.KindOfTagId" class="form-label">Что это?</label>
+        <select asp-for="@Model.Item.KindOfTagId" asp-items="@Model.Tags" class="form-select">
+            <option value="">Выбери что это</option>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="@Model.price" class="form-label">Стоимость</label>
+        <input asp-for="@Model.price" class="form-control" type="number" step="0.01">
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="@Model.count" class="form-label">Количество</label>
+        <input asp-for="@Model.count" class="form-control" type="number" step="0.01">
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="@Model.Item.Description" class="form-label">Пояснение</label>
+        <textarea asp-for="@Model.Item.Description" class="form-control" rows="5">@Model.Item.Description</textarea>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="@Model.Item.currencyName" class="form-label">Валюта: [@Model.Item.currencyName]</label>
+        <input asp-for="@Model.Item.currencyName" class="form-control" type="text">
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="@Model.currencyPriceInRub" class="form-label">Курс: [@Model.currencyPriceInRub]</label>
+        <input asp-for="@Model.currencyPriceInRub" pattern="[0-9]+([\.,][0-9]+)?" class="form-control" type="number" step="0.0001">
+    </div>
+
+    <button type="submit" class="button button-green">Save</button>
+    <a asp-page="/budget/spending" asp-route-budgetId="@Model.Item.budgetId" asp-route-date="@Model.Item.Date.ToShortDateString()" class="button button-silver">Отмена</a>
+</form>
+
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <div id="grid">
+                    <partial name="_catspartial" model="@Model.CurrentCat"></partial>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

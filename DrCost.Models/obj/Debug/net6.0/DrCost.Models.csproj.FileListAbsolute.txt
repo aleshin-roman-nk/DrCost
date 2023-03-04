@@ -1,0 +1,12 @@
+D:\prg\DrCost\DrCost.Models\bin\Debug\net6.0\DrCost.Models.deps.json
+D:\prg\DrCost\DrCost.Models\bin\Debug\net6.0\DrCost.Models.dll
+D:\prg\DrCost\DrCost.Models\bin\Debug\net6.0\DrCost.Models.pdb
+D:\prg\DrCost\DrCost.Models\obj\Debug\net6.0\DrCost.Models.csproj.AssemblyReference.cache
+D:\prg\DrCost\DrCost.Models\obj\Debug\net6.0\DrCost.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\prg\DrCost\DrCost.Models\obj\Debug\net6.0\DrCost.Models.AssemblyInfoInputs.cache
+D:\prg\DrCost\DrCost.Models\obj\Debug\net6.0\DrCost.Models.AssemblyInfo.cs
+D:\prg\DrCost\DrCost.Models\obj\Debug\net6.0\DrCost.Models.csproj.CoreCompileInputs.cache
+D:\prg\DrCost\DrCost.Models\obj\Debug\net6.0\DrCost.Models.dll
+D:\prg\DrCost\DrCost.Models\obj\Debug\net6.0\refint\DrCost.Models.dll
+D:\prg\DrCost\DrCost.Models\obj\Debug\net6.0\DrCost.Models.pdb
+D:\prg\DrCost\DrCost.Models\obj\Debug\net6.0\ref\DrCost.Models.dll

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "m7F9RzFCnqcKZ/PpxZcRsEXwkDZBk/B9yxj6C60tHc0=",
+  "Hash": "gctn4xgHsOCp6rAJiUiAVaVWJ3ShW1kgFCf+RITUFvI=",
   "Source": "DrCost",
   "BasePath": "_content/DrCost",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\prg\\DrCost\\DrCost\\wwwroot\\js\\cat-gide.js",
+      "SourceId": "DrCost",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\prg\\DrCost\\DrCost\\wwwroot\\",
+      "BasePath": "_content/DrCost",
+      "RelativePath": "js/cat-gide.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\cat-gide.js"
     },
     {
       "Identity": "D:\\prg\\DrCost\\DrCost\\wwwroot\\js\\site.js",

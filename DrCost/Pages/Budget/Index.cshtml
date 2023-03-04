@@ -1,0 +1,54 @@
+﻿@page
+@model DrCost.Pages.Budget.IndexModel
+@{
+}
+
+
+<style>
+    .badg_wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 5px;
+    }
+
+    .badg_item {
+        border: 1px solid #c1c1c1;
+        text-align: center;
+    }
+
+    .badg_item_header {
+        border-bottom: 1px solid #c1c1c1;
+    }
+
+</style>
+
+<h4>budgets</h4>
+
+<a class="btn btn-link" asp-page="/budget/create">create</a>
+
+<br />
+
+<h6>COLLECTION</h6>
+
+@{
+    var cd = DateTime.Today;
+}
+
+<div class="badg_wrapper">
+    @foreach (var item in Model.Budgets)
+    {
+        <div class="badg_item">
+            <a class="btn btn-link badg_item_header" asp-page="/budget/detail" 
+            asp-route-budgetid="@item.Id"
+            asp-route-year="@cd.Year"
+            asp-route-month="@cd.Month">@item.Name</a>
+            <div>
+                выделено: @item.DefaultMoney
+            </div>
+            <div>
+                потрачено: @item.DefaultMoney
+            </div>
+        </div>
+    }
+</div>
+

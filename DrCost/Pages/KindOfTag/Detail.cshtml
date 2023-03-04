@@ -1,0 +1,17 @@
+﻿@page "{id}"
+@model DrCost.Pages.KindOfTag.DetailModel
+@{
+}
+
+<form method="post">
+    <input type="hidden" asp-for="@Model.KindOfTag.Id" />
+
+    <div class="mb-3">
+        <label asp-for="@Model.KindOfTag.Name" class="form-label">Name</label>
+        <input asp-for="@Model.KindOfTag.Name" type="text" class="form-control" placeholder="@Model.KindOfTag.Name">
+    </div>
+
+    <input class="btn btn-outline-success mb-3" type="submit" value="Save" />
+    <a class="btn btn-outline-info mb-3" asp-page="/KindOfTag/index">Cancel</a>
+    <input class="btn btn-outline-danger mb-3" type="submit" value="Delete" asp-page-handler="Delete"/>
+</form>

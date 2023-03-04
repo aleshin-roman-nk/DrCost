@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32819.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrCost", "DrCost\DrCost.csproj", "{F17B76AF-AD74-49DE-90CB-84C18EDB3ECA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DrCost", "DrCost\DrCost.csproj", "{F17B76AF-AD74-49DE-90CB-84C18EDB3ECA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrCost.Services", "DrCost.Services\DrCost.Services.csproj", "{2A7FCD97-708C-4283-8F54-650F5CDCC16C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DrCost.Services", "DrCost.Services\DrCost.Services.csproj", "{2A7FCD97-708C-4283-8F54-650F5CDCC16C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrCost.Models", "DrCost.Models\DrCost.Models.csproj", "{AD81D046-EE02-4FCD-BE1B-694B97320F79}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DrCost.Models", "DrCost.Models\DrCost.Models.csproj", "{AD81D046-EE02-4FCD-BE1B-694B97320F79}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

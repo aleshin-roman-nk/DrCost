@@ -1,0 +1,18 @@
+﻿@page
+@model DrCost.Pages.appsettingsModel
+@{
+}
+
+<form method="post">
+    <label asp-for="@Model.CurrencyName">Наименование валюты</label>
+    <input asp-for="@Model.CurrencyName" type="text">
+    <div class="currVal">@Model.CurrencyName</div>
+    <button type="submit" class="btn btn-success" asp-page-handler="UpdateCurrencyName">Save</button>
+</form>
+
+<form method="post">
+    <label asp-for="@Model.CurrencyValue">Цена к рублю</label>
+    <input asp-for="@Model.CurrencyValue" type="number" step="any">
+    <div class="currVal">@Model.CurrencyValue</div>
+    <button type="submit" class="btn btn-success" asp-page-handler="UpdateCurrencyValue">Save</button>
+</form>

@@ -1,18 +1,81 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.button {
+    /*background-color: #4CAF50;*/
+    border: none;
+    color: white;
+    /*padding: 16px 32px;*/
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.25s;
+    cursor: pointer;
+}
+
+.button-green {
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+}
+
+    .button-green:hover {
+        background-color: #4CAF50;
+        color: white;
+    }
+
+
+.button-red {
+    background-color: white;
+    color: black;
+    border: 2px solid #FF0000;
+}
+
+    .button-red:hover {
+        background-color: #FF0000;
+        color: white;
+    }
+
+.button-silver {
+    background-color: white;
+    color: black;
+    border: 2px solid #778899;
+}
+
+    .button-silver:hover {
+        background-color: #778899;
+        color: white;
+    }
+
+.button-Beige {
+    background-color: white;
+    color: black;
+    border: 2px solid #2F4F4F;
+}
+
+.button-Beige:hover {
+    background-color: #F5F5DC;
+    /*color: white;*/
 }

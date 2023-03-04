@@ -6,4 +6,24 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Content Remove="Pages\Category\_CatGuidePartial.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DrCost.Services\DrCost.Services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\Category\_CatGuidePartial.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Pages\Category\_CatGuidePartial.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Pages\Category\_CatGuidePartial.cshtml" />
+  </ItemGroup>
+
 </Project>

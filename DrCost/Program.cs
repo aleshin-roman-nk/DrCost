@@ -1,7 +1,25 @@
+using DrCost;
+using DrCost.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+
+builder.Services.AddSingleton<IAppSystemProperties>(new AppSystemProperties());
+builder.Services.AddSingleton<IAppDbFactory, AppDbFactory>();
+builder.Services.AddTransient(typeof(BudgetRepo));
+builder.Services.AddTransient(typeof(AppSettingsRepo));
+builder.Services.AddTransient(typeof(MonthBudgetInstanceRepo));
+builder.Services.AddTransient(typeof(StuffRepo));
+builder.Services.AddTransient(typeof(KindOfTagsRepo));
+
+builder.Services.Configure<RouteOptions>(options =>
+{
+	options.LowercaseUrls = true;
+	options.LowercaseQueryStrings = true;
+	options.AppendTrailingSlash = true;
+});
 
 var app = builder.Build();
 

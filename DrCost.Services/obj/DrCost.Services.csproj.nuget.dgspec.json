@@ -4,14 +4,14 @@
     "D:\\prg\\DrCost\\DrCost.Services\\DrCost.Services.csproj": {}
   },
   "projects": {
-    "D:\\prg\\DrCost\\DrCost.Services\\DrCost.Services.csproj": {
+    "D:\\prg\\DrCost\\DrCost.Models\\DrCost.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\prg\\DrCost\\DrCost.Services\\DrCost.Services.csproj",
-        "projectName": "DrCost.Services",
-        "projectPath": "D:\\prg\\DrCost\\DrCost.Services\\DrCost.Services.csproj",
+        "projectUniqueName": "D:\\prg\\DrCost\\DrCost.Models\\DrCost.Models.csproj",
+        "projectName": "DrCost.Models",
+        "projectPath": "D:\\prg\\DrCost\\DrCost.Models\\DrCost.Models.csproj",
         "packagesPath": "C:\\Users\\alesh\\.nuget\\packages\\",
-        "outputPath": "D:\\prg\\DrCost\\DrCost.Services\\obj\\",
+        "outputPath": "D:\\prg\\DrCost\\DrCost.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\alesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -55,7 +55,84 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\prg\\DrCost\\DrCost.Services\\DrCost.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\prg\\DrCost\\DrCost.Services\\DrCost.Services.csproj",
+        "projectName": "DrCost.Services",
+        "projectPath": "D:\\prg\\DrCost\\DrCost.Services\\DrCost.Services.csproj",
+        "packagesPath": "C:\\Users\\alesh\\.nuget\\packages\\",
+        "outputPath": "D:\\prg\\DrCost\\DrCost.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\alesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\prg\\DrCost\\DrCost.Models\\DrCost.Models.csproj": {
+                "projectPath": "D:\\prg\\DrCost\\DrCost.Models\\DrCost.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Data.Sqlite": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

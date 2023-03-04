@@ -1,0 +1,49 @@
+﻿@using DrCost.ViewDataTypes;
+@model CatGuideViewModel
+
+<p>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+
+            @*Корневой элемент*@
+            <li class="breadcrumb-item"><a href="#" onclick="enterCat(0)">[Все]</a></li>
+
+            @*Вся цепочка родителей*@
+            @foreach (var item in Model.Parents)
+            {
+                <li class="breadcrumb-item"><a href="#" onclick="enterCat(@item.Id)">@item.Name</a></li>
+            }
+
+            @*Текущий элемент, некликабельный*@
+            @if (Model.Current != null)
+            {
+                <li class="breadcrumb-item active" aria-current="page">@Model.Current.Name</li>
+            }
+
+        </ol>
+    </nav>
+</p>
+
+<input type="hidden" value="@Model.Current.Id" id="catid-current" name="catid-current" />
+
+<div class="wrap">
+    @foreach (var item in Model.Children)
+    {
+        <div class="item" onclick="enterCat(@item.Id)">
+            @item.Name
+        </div>
+    }
+</div>
+
+<hr />
+
+Cat properties:
+<br />
+<div class="wrap">
+    @foreach (var item in Model.Current.StuffTypes)
+    {
+        <div class="item item-prop" onclick="chooseCatProperty(@item.Id, '@item.Name')">
+            @item.Name
+        </div>
+    }
+</div>

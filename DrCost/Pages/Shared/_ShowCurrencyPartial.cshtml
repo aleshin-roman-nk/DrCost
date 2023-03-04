@@ -1,0 +1,9 @@
+﻿@using DrCost.Services;
+@inject AppSettingsRepo appsett
+
+@{
+    string currVal = appsett.GetDecimal("currency_value").ToString();
+    string currName = appsett.GetString("currency_name");
+}
+
+<div>@($"1 {@currName} = {@currVal} руб")</div>

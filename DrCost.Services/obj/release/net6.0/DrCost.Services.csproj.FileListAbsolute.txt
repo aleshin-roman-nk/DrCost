@@ -1,0 +1,15 @@
+d:\prg\DrCost\DrCost.Services\bin\release\net6.0\DrCost.Services.deps.json
+d:\prg\DrCost\DrCost.Services\bin\release\net6.0\DrCost.Services.dll
+d:\prg\DrCost\DrCost.Services\bin\release\net6.0\DrCost.Services.pdb
+d:\prg\DrCost\DrCost.Services\bin\release\net6.0\DrCost.Models.dll
+d:\prg\DrCost\DrCost.Services\bin\release\net6.0\DrCost.Models.pdb
+d:\prg\DrCost\DrCost.Services\obj\release\net6.0\DrCost.Services.csproj.AssemblyReference.cache
+d:\prg\DrCost\DrCost.Services\obj\release\net6.0\DrCost.Services.GeneratedMSBuildEditorConfig.editorconfig
+d:\prg\DrCost\DrCost.Services\obj\release\net6.0\DrCost.Services.AssemblyInfoInputs.cache
+d:\prg\DrCost\DrCost.Services\obj\release\net6.0\DrCost.Services.AssemblyInfo.cs
+d:\prg\DrCost\DrCost.Services\obj\release\net6.0\DrCost.Services.csproj.CoreCompileInputs.cache
+d:\prg\DrCost\DrCost.Services\obj\release\net6.0\DrCost.Services.csproj.CopyComplete
+d:\prg\DrCost\DrCost.Services\obj\release\net6.0\DrCost.Services.dll
+d:\prg\DrCost\DrCost.Services\obj\release\net6.0\refint\DrCost.Services.dll
+d:\prg\DrCost\DrCost.Services\obj\release\net6.0\DrCost.Services.pdb
+d:\prg\DrCost\DrCost.Services\obj\release\net6.0\ref\DrCost.Services.dll

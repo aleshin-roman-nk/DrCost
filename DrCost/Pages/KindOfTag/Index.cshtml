@@ -1,0 +1,41 @@
+﻿@page
+@model DrCost.Pages.KindOfTag.IndexModel
+@{
+}
+
+<style>
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap : 5px;
+    }
+
+    .bought_item {
+        border-bottom: 1px dashed #c1c1c1;
+    }
+
+    .bought_item_head {
+        border-bottom: 2px solid #c1c1c1;
+    }
+
+    .ctrls_wrapper {
+        border: 2px solid #CECEF6;
+        background-color: #EFEFFB;
+    }
+
+    .ctrls-item-btn {
+        width: 85px;
+    }
+
+</style>
+
+<h4>Теги типа товара</h4>
+
+<a class="btn btn-link" asp-page="/KindOfTag/create">создать</a>
+
+<div class="wrapper">
+    @foreach (var item in Model.Tags)
+    {
+        <a class="button button-Beige" asp-page="/KindOfTag/detail" asp-route-Id="@item.Id">@item.Name</a>
+    }
+</div>

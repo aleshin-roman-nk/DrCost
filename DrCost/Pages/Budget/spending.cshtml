@@ -1,0 +1,70 @@
+﻿@page "{budgetId}/{date}"
+@model DrCost.Pages.Budget.spendingModel
+@{
+}
+
+<style>
+    .wrapper {
+        display: grid;
+        grid-template-columns: 40% 15% 15% 20% 10%;
+    }
+
+    .bought_item {
+        border-bottom: 1px dashed #c1c1c1;
+    }
+
+    .bought_item_head {
+        border-bottom: 2px solid #c1c1c1;
+    }
+
+    .ctrls_wrapper {
+        /*        display: flex;*/
+        border: 2px solid #CECEF6;
+        background-color: #EFEFFB;
+    }
+
+    .ctrls-item-btn {
+        /*flex: 1 50px;*/
+        width: 85px;
+    }
+
+</style>
+
+<div>
+    <a class="btn btn-link badg_item_header" asp-page="/budget/detail"
+       asp-route-budgetid="@Model.budgetId"
+       asp-route-year="@Model.d.Year"
+       asp-route-month="@Model.d.Month">назад</a>
+</div>
+
+Бюджет : Семейные нужды
+<br />
+Дата : @Model.Idate
+<br />
+
+<hr />
+
+<div class="ctrls_wrapper">
+    <a class="button button-green ctrls-item-btn"
+       asp-page="/budget/stuff/create"
+       asp-route-budgetId="@Model.budgetId" asp-route-dt="@Model.Idate">Добавить</a>
+</div>
+
+<div class="wrapper">
+    <div class="bought_item_head">Наименование</div>
+    <div class="bought_item_head">Кол-во</div>
+    <div class="bought_item_head">Цена</div>
+    <div class="bought_item_head">Сумма</div>
+    <div class="bought_item_head">-</div>
+
+    @foreach (var stuff in Model.Stuffs)
+    {
+        <div class="bought_item">@stuff.Name</div>
+        <div class="bought_item">@stuff.count</div>
+        <div class="bought_item">@stuff.price</div>
+        <div class="bought_item">@stuff.Total</div>
+        <a class="button button-green bought_item" asp-page="/budget/stuff/edit" asp-route-stuffId="@stuff.Id">
+            e
+        </a>
+    }
+</div>
